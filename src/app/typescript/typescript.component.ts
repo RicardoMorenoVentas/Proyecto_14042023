@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Bicicleta } from '../_modelo/bicicleta';
+import { Bicicleta } from '../../_modelo/bicicleta';
 
 @Component({
   selector: 'app-typescript',
