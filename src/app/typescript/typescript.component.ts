@@ -9,20 +9,12 @@ import { Bicicleta } from '../_modelo/bicicleta';
 export class TypescriptComponent {
     private _cambio_velocidad: number = 0;
 
-    bicicleta : Bicicleta = new Bicicleta("azul","BMX",0,12,3);
+    bicicleta : Bicicleta = new Bicicleta();
 
     public get cambio_velocidad(): number {
       return this._cambio_velocidad;
     }
     public set cambio_velocidad(value: number) {
       this._cambio_velocidad = value;
-    }
-
-    acelera(){
-      this.bicicleta.acelerar(this._cambio_velocidad)
-    }
-
-    frena(){
-      this.bicicleta.frenar(this._cambio_velocidad)
     }
 }

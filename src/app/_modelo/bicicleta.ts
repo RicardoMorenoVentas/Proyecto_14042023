@@ -6,7 +6,7 @@ export class Bicicleta {
   private _platos:number;
   private _electrica:boolean;
 
-  constructor(color:string, marca:string, velocidad:number, pinyones:number, platos:number, electrica = false){
+  constructor(color = "roja", marca = "BMX", velocidad = 0, pinyones = 12, platos = 3, electrica = false){
     this._color = color;
     this._marca = marca;
     this._velocidad = velocidad;

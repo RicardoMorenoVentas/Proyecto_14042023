@@ -12,7 +12,7 @@
 
 <h2>Cambio de velocidad</h2>
 <p>Introduzca la velocidad como cambia: <input type="number" [(ngModel)]="cambio_velocidad"></p>
-<button (click)="acelera()">Acelerar</button>&nbsp;&nbsp;<button (click)="frena()">Frenar</button>
+<button (click)="bicicleta.acelerar(cambio_velocidad)">Acelerar</button>&nbsp;&nbsp;<button (click)="bicicleta.frenar(cambio_velocidad)">Frenar</button>
 
 
 <pre>{{bicicleta | json}}</pre>
