@@ -1,0 +1,18 @@
+<h1>Formulario instancia bicicleta</h1>
+
+<p>Color de bicicleta: <input [(ngModel)]="bicicleta.color"></p>
+<p>Marca de bicicleta: <input [(ngModel)]="bicicleta.marca"></p>
+<p>Velocidad actual de la bicicleta: <input [(ngModel)]="bicicleta.velocidad"></p>
+<p>Piñones de la bicicleta: <input [(ngModel)]="bicicleta.pinyones"></p>
+<p>Platos de la bicicleta: <input [(ngModel)]="bicicleta.platos"></p>
+<p>¿Es eléctrica?: <select [(ngModel)]="bicicleta.electrica">
+  <option value="true">Sí</option>
+  <option value="false">No</option>
+</select></p>
+
+<h2>Cambio de velocidad</h2>
+<p>Introduzca la velocidad como cambia: <input type="number" [(ngModel)]="cambio_velocidad"></p>
+<button (click)="acelera()">Acelerar</button>&nbsp;&nbsp;<button (click)="frena()">Frenar</button>
+
+
+<pre>{{bicicleta | json}}</pre>
